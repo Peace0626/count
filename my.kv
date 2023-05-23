@@ -1,0 +1,21 @@
+#:kivy 2.1.0
+Root:
+ 
+<Root>
+    BoxLayout:
+        orientation:'vertical'
+ 
+        Button:
+            id:button1
+            text:'+1'
+            on_release:root.count_up()
+ 
+        Button:
+            id:button2
+            text:'Reset'
+            on_release:root.count_reset()
+ 
+        Label:
+            id:label1
+            value:0
+            text:str(self.value)
